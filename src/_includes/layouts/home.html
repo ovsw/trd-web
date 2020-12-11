@@ -1,0 +1,15 @@
+{% extends "layouts/base.html" %}
+{% set pageCriticalStyles = ['css/home.css'] %}
+
+{% block content %}
+
+  {% include "partials/hero.html" %}
+
+  <div class="wrapper">
+    <article>
+      <h1 class="headline" data-color="secondary-light">{{ title }}</h1>
+        {{ content | safe }}  
+    </article>
+  </div>
+  
+{% endblock %}
