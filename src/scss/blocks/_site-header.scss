@@ -1,3 +1,27 @@
-.site-header {
-  
+
+.site-head {
+    padding-top: 4vh;
+}
+.menu {
+    float: right;
+    padding-top: 40px !important;
+    li {
+        display: inline-block;
+        margin: 0 5px;
+        a {
+            display: inline-block;
+            border-radius: 28px;
+            padding: 15px 25px;
+            font-size: 15px;
+            text-decoration: none;
+            color: #fff;
+
+            &:hover {
+                background: #B4D9DB;
+                box-shadow: -10px -10px 25px -10px rgba(222, 238, 239, 0.20307), 20px 20px 25px -10px rgba(1, 54, 57, 0.25112);
+                color: #015B60;
+              }
+        }
+        
+    }
 }

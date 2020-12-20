@@ -1,3 +1,24 @@
 .hero {
+  color: #fff;
+  padding-top: 9vh;
+
+  .heroImage {
+      background: url(../images/home/hero.png) no-repeat top left;
+      $width: 60%;
+      width: $width;
+      padding-bottom: ($width * 0.94);
+      background-size: 100% auto;
+      float: right;
+      margin-right: -10%;
+    }
   
+
+  .ball {
+    width: 166px;
+    clear: both;
+    margin-left: -60px;
+    img {
+        filter: drop-shadow(0 47px 45px rgba(0, 98, 104, 1));
+    }
+  }
 }

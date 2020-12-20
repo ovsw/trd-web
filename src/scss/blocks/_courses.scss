@@ -1,0 +1,30 @@
+.cursesRight {
+    width: 60%;
+    float: right;
+
+    .card {
+        &:first-child {
+            margin-right: 80px;
+        }
+        &:last-child {
+            margin-left: 80px;
+        }
+        
+        &.colorCard h3 span {
+            display: block;
+            font-size: .6em;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 2.1em;
+            letter-spacing: 1px;
+            color:rgba(get-color('light-glare'), .4);
+        }
+
+        &.colorCard h3, &.colorCard .cardFooterLeft strong {
+            color:rgba(get-color('light-glare'), 1);
+        }
+
+    }
+
+    
+}
