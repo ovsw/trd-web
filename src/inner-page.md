@@ -3,4 +3,4 @@
   layout: 'layouts/home.html'
 ---
 
-Hello, world!!!!!
+Inner page

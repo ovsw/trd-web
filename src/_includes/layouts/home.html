@@ -4,12 +4,20 @@
 {% block content %}
 
   {% include "partials/hero.html" %}
+  {% include "partials/courses.html" %}
+
 
   <div class="wrapper">
     <article>
       <h1 class="headline" data-color="secondary-light">{{ title }}</h1>
         {{ content | safe }}  
     </article>
+  </div>
+
+  <div class="[ hero ] [ flow ]">
+  <h2>header</h2>
+  <p>lorem daskndjoaksnd asjnd lkasnd;a</p>
+  <button>Button</button>
   </div>
   
 {% endblock %}
