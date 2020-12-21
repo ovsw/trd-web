@@ -6,6 +6,8 @@
 
 @import 'reset';
 
+@import '../fonts/fonts.css';
+
 // Global styles start
 :root {
   --flow-space: 1.875rem;
@@ -65,6 +67,10 @@ h1, h2 {
 
 .pull-right {
   float: right;
+}
+
+.upperCase {
+  text-transform: uppercase;
 }
 
 .callToAction {
