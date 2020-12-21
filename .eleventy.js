@@ -7,8 +7,9 @@ const urlFor = require('./src/utils/imageUrl')
 module.exports = config => {
   // Set directories to pass through to the dist folder
   config.addPassthroughCopy('./src/images/');
-  // Copy `./src/js/` to the dist folder
   config.addPassthroughCopy("./src/js/");
+  config.addPassthroughCopy("./src/fonts/");
+  
 
   // ////////////////////////////////////
   // process markdown from Sanity
