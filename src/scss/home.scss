@@ -11,6 +11,10 @@ $outputTokenCSS: false;
 
 @import 'blocks/hero.scss';
 @import 'blocks/courses.scss';
+@import 'blocks/staff.scss';
+@import 'blocks/testimonials.scss';
+@import 'blocks/news.scss';
+@import 'blocks/location.scss';
 
 $borderRadius : 10px;
 
@@ -18,9 +22,10 @@ body {
     padding-top: 0 !important;
 }
 .site-wrap {
-    background: url(../images/home/Polygon.svg) no-repeat 93% 0;
+    background: url(../images/home/Polygon.svg) no-repeat 90% 0;
     /* max-width: 1440px; */
     margin: 0 auto;
+    overflow: hidden;
     background-size: 1925px;
 }
 .columnLeft {
@@ -32,7 +37,7 @@ body {
         font-size: 5.2rem;;
     }
     h2 {
-        font-size: 4.2rem;;
+        font-size: 4rem;;
     }
 }
 
@@ -41,14 +46,52 @@ body {
     border-radius: $borderRadius;
     padding: 40px;
     margin-bottom: 40px;
+    font-size: .7em;
+    line-height: 1.7em;
+
+    h3 {
+        font-size: 1.4em;
+    }
 
     &.whiteCard {
         background-color:get-color('light');
+        color: get-color('dark');
     }
     &.colorCard {
         background: linear-gradient(239.77deg, #00949A 13.66%, #005B61 86.53%);
         color:rgba(get-color('light-glare'), 0.6);
 
         
+    }
+}
+
+.section {
+    padding: 120px 0;
+    position: relative;
+
+    &:after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+
+.gridWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2%;
+
+    .gridItem {
+        position: relative;
+
+        .avatar {
+            position: absolute;
+            top: -55px;
+            left: 50%;
+            margin-left: -55px;
+            box-shadow: 0px 50px 50px -20px rgba(1, 54, 57, 0.254698);
+            border-radius: 50%;
+        }
     }
 }

@@ -1,0 +1,16 @@
+.newsSection {
+    background: url(../images/home/news_bg.svg) no-repeat 0 0, linear-gradient(239.77deg, #00949A 13.66%, #005B61 86.53%);
+    color: #fff;
+    
+    .gridWrapper {
+        margin-top: 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        .fullsize {
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+            border-radius: 10px 10px 0 0;
+            margin: -40px -40px 0 -40px;
+        }
+    }
+}

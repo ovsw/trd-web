@@ -1,22 +1,36 @@
+.heroSectionWrapper {
+    background: url(../images/home/hero_gray_bg.svg) no-repeat 0 -220px;
+}
 .hero {
   color: #fff;
-  padding-top: 9vh;
+  padding-top: 8vh !important;
+  
 
   .heroImage {
       background: url(../images/home/hero.png) no-repeat top left;
-      $width: 60%;
+      $width: 70%;
       width: $width;
       padding-bottom: ($width * 0.94);
       background-size: 100% auto;
       float: right;
       margin-right: -10%;
     }
-  
+  h3 {
+      font-weight: 400;
+      line-height: 1.8em;
+      font-size: 1em;
+
+      strong {
+          font-size: 1.2em;
+          display: block;
+      }
+  }
 
   .ball {
-    width: 166px;
-    clear: both;
+    width: 215px;
+    position: absolute;
     margin-left: -60px;
+    bottom: -20px;
     img {
         filter: drop-shadow(0 47px 45px rgba(0, 98, 104, 1));
     }

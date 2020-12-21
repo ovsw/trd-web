@@ -1,3 +1,24 @@
 .site-footer {
-  
+  background: #161A1B;
+  padding: 60px 0 !important;
+  color: #fff;
+  font-size: .7em;
+  line-height: 1.8em;
+  .footerDescription {
+      opacity: .6;
+  }
+  .columnLeft  {
+      padding-top: 0;
+  }
+  .footerColumnRight {
+      width: 60%;
+      float: right;
+  }
+  .footerGrid {
+      clear: both;
+      padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+  }
 }

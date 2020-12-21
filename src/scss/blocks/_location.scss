@@ -1,0 +1,21 @@
+.locationWrapper {
+    background: #d8d8d8;
+    padding: 0 !important;
+    .containers {
+        position: relative;
+    }
+    &>img {
+        margin: 0 auto;
+    }
+    .card {
+        position: absolute;
+        bottom: -80px;
+        left: 5%;
+        width: 50%;
+
+        h3 {
+            font-size: 2.6em;
+        }
+    }
+    z-index : 2;
+}

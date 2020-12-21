@@ -1,0 +1,39 @@
+.testimonialsSection {
+    padding-top: 300px !important;
+    background: url(../images/home/testimonials_bg.svg) no-repeat bottom center;
+    .gridWrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 100px;
+        .gridItem  {
+            .avatar {
+                padding: 0;
+                width: 64px;
+                left: 40px;
+                margin-left: 0;
+                top: -32px;
+            }
+             p:not(.primaryColorText) {
+                 font-style: italic;
+             }
+             .primaryColorText {
+                 margin-top: 10px;
+             }
+        }
+        
+    }
+}
+.testimonialsBanner {
+    .card {
+        padding: 80px;
+        .rightColumn {
+            float: right;
+            padding-top: 30px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        h3 {
+            font-weight: 400;
+        }
+    }
+}

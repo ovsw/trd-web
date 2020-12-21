@@ -1,0 +1,25 @@
+.staffSection {
+    background: url(../images/home/staff.svg) no-repeat bottom left,linear-gradient(239.77deg, #00949A 13.66%, #005B61 86.53%);
+    clear: both;
+    color: #fff;
+    text-align: center;
+    .gridWrapper {
+        margin-top: 100px;
+        img {
+            border-radius: 50%;
+            padding: 10px;
+            background: #fff;
+            width: 110px;
+        }
+    }
+    
+    .cubes {
+        position: absolute;
+        width: 617px;
+        height: 560px;
+        background: url(../images/home/cubes.svg) no-repeat top left;
+        background-size: 100%;
+        bottom: -427px;
+        right: 0;
+    }
+}
