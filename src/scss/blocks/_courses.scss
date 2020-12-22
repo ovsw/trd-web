@@ -1,7 +1,5 @@
 .coursesSection {
-    padding-top: 0!important;
-
-    .cursesRight {
+        .cursesRight {
         width: 60%;
         float: right;
         .card {
@@ -37,5 +35,75 @@
         }
     
         
+    }
+}
+
+@media screen and (max-width: 850px) {    
+    .coursesSection  .columnLeft {
+        width: 80%;
+    }
+    .coursesSection .cursesRight {
+        width: 100%;
+        float: none;
+        clear: both;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
+        
+        .card {
+            padding-bottom: 6rem;
+            &:first-child {
+                margin-right: 0; 
+            }
+            &:last-child {
+                margin-left: 0; 
+            }
+
+            .cardFooter {
+                position: absolute;
+                bottom: 1.7rem;
+                right: 1.7rem;
+                left: 1.7rem;
+                
+
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: 760px) {    
+    .coursesSection .cursesRight {        
+        .card {
+            &:first-child {
+                margin-right: 0; 
+            }
+            &:last-child {
+                margin-left: 0; 
+            }
+
+            
+
+            
+        }
+        
+    }
+}
+
+@media screen and (max-width: 760px)  and (min-width: 501px){
+    .coursesSection .cursesRight .card {
+        padding-bottom: 8rem;
+    }
+    .cardFooter {
+        text-align: center;
+        .cardFooterLeft, & .pull-right {
+            float: none;
+        }
+    }
+
+}
+@media screen and (max-width: 500px) {    
+    .coursesSection .cursesRight {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
     }
 }

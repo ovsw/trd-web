@@ -28,3 +28,40 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+    .hero {
+        padding-bottom: 7rem;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .hero .columnLeft {
+        width: 50%;
+        position: relative;
+    }
+    .hero__image {
+        margin-right: -20%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .hero__image {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 0;
+        opacity: .3;
+        width: 100%;
+        padding-bottom: 88%;
+    }
+    .hero .columnLeft {
+        width: 80%;
+    }
+    .ball {
+        right: -8rem;
+        margin-left: 0;
+
+    }
+    .hero {
+        padding-bottom: 9rem;
+    }
+}

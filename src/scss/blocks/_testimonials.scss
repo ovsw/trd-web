@@ -12,11 +12,11 @@
                 margin-left: 0;
                 top: -32px;
             }
-             p:not(.primaryColorText) {
+             p:not(.color-accent) {
                  font-style: italic;
              }
-             .primaryColorText {
-                 margin-top: 10px;
+             .color-accent {
+                 margin-top: 0;
              }
         }
         
@@ -24,7 +24,7 @@
 }
 .testimonialsBanner {
     .card {
-        padding: 80px;
+        padding: 5%;
         .rightColumn {
             float: right;
             padding-top: 30px;
@@ -34,6 +34,36 @@
         }
         h3 {
             font-weight: 400;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .testimonialsSection {
+        
+        .gridWrapper {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .testimonialsBanner {
+        .card {
+            padding-bottom: 7rem;
+            .rightColumn {
+                position: absolute;
+                bottom: 12%;
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 450px) {
+.testimonialsSection {
+    
+        .gridWrapper {
+            margin-bottom: 100px;
+            grid-template-columns: 1fr;
         }
     }
 }

@@ -4,21 +4,17 @@
   color: #fff;
   font-size: .7em;
   line-height: 1.8em;
+  .pull-right {
+      text-align: right;
+  }
   .footerDescription {
       opacity: .6;
-  }
-  .columnLeft  {
-      padding-top: 0;
-  }
-  .footerColumnRight {
-      width: 60%;
-      float: right;
   }
   .footerGrid {
       clear: both;
       padding-top: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-gap: 2%;
   }
 }

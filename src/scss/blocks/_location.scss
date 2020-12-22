@@ -19,3 +19,8 @@
     }
     z-index : 2;
 }
+@media screen and (max-width: 750px) {
+    .locationWrapper .card{
+        width: 90%;
+    }
+}
