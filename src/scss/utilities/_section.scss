@@ -1,0 +1,10 @@
+.section {
+  padding: 120px 0;
+  position: relative;
+
+  &:after {
+      display: block;
+      content: "";
+      clear: both;
+  }
+}

@@ -1,12 +1,13 @@
-.heroSectionWrapper {
-    background: url(../images/home/hero_gray_bg.svg) no-repeat 0 -220px;
-}
+
 .hero {
   color: #fff;
   padding-top: 8vh !important;
   
+  &__wrapper {
+    background: url(../images/home/hero_gray_bg.svg) no-repeat 0 -220px;
+  }
 
-  .heroImage {
+  &__image {
       background: url(../images/home/hero.png) no-repeat top left;
       $width: 70%;
       width: $width;
@@ -15,24 +16,15 @@
       float: right;
       margin-right: -10%;
     }
+
   h3 {
       font-weight: 400;
       line-height: 1.8em;
       font-size: 1em;
 
-      strong {
-          font-size: 1.2em;
-          display: block;
-      }
-  }
-
-  .ball {
-    width: 215px;
-    position: absolute;
-    margin-left: -60px;
-    bottom: -20px;
-    img {
-        filter: drop-shadow(0 47px 45px rgba(0, 98, 104, 1));
+    strong {
+      font-size: 1.2em;
+      display: block;
     }
   }
 }

@@ -16,8 +16,6 @@ $outputTokenCSS: false;
 @import 'blocks/news.scss';
 @import 'blocks/location.scss';
 
-$borderRadius : 10px;
-
 body {
     padding-top: 0 !important;
 }
@@ -28,54 +26,6 @@ body {
     overflow: hidden;
     background-size: 1925px;
 }
-.columnLeft {
-    float: left;
-    width: 40%;
-    padding-top: 5%;
-
-    h1 {
-        font-size: 5.2rem;;
-    }
-    h2 {
-        font-size: 4rem;;
-    }
-}
-
-.card {
-    box-shadow: 0px 50px 50px -20px rgba(1, 54, 57, 0.254698);
-    border-radius: $borderRadius;
-    padding: 40px;
-    margin-bottom: 40px;
-    font-size: .7em;
-    line-height: 1.7em;
-
-    h3 {
-        font-size: 1.4em;
-    }
-
-    &.whiteCard {
-        background-color:get-color('light');
-        color: get-color('dark');
-    }
-    &.colorCard {
-        background: linear-gradient(239.77deg, #00949A 13.66%, #005B61 86.53%);
-        color:rgba(get-color('light-glare'), 0.6);
-
-        
-    }
-}
-
-.section {
-    padding: 120px 0;
-    position: relative;
-
-    &:after {
-        display: block;
-        content: "";
-        clear: both;
-    }
-}
-
 
 .gridWrapper {
     display: grid;
