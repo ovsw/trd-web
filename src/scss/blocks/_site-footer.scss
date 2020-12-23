@@ -4,8 +4,14 @@
   color: #fff;
   font-size: .7em;
   line-height: 1.8em;
+  h4 {
+    margin-bottom: 1.875rem;
+  }
   .pull-right {
       text-align: right;
+  }
+  .footerMenu li {
+    margin-bottom: .9rem;
   }
   .footerDescription {
       opacity: .6;

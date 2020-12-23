@@ -2,13 +2,17 @@
 {% set pageCriticalStyles = ['css/home.css'] %}
 
 {% block content %}
-
-  {% include "partials/hero.html" %}
-  {% include "partials/courses.html" %}
-  {% include "partials/staff.html" %}
-  {% include "partials/testimonials.html" %}
-  {% include "partials/location.html" %}
-  {% include "partials/news.html" %}
+<div class='homeWrapper'>
+  <div class='heroBg'></div>
+  <div class='innerHomeWrapper'>
+    {% include "partials/hero.html" %}
+    {% include "partials/courses.html" %}
+    {% include "partials/staff.html" %}
+    {% include "partials/testimonials.html" %}
+    {% include "partials/location.html" %}
+    {% include "partials/news.html" %}
+  </div>
+</div>
 
 <!--
   <div class="wrapper">

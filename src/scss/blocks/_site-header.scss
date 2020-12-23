@@ -1,6 +1,8 @@
 
 .site-head {
     padding-top: 4vh;
+    position: relative;
+    z-index: 1;;
 
     .button {
         margin-top: .6rem!important;

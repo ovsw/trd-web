@@ -19,12 +19,8 @@ $outputTokenCSS: false;
 body {
     padding-top: 0 !important;
 }
-.site-wrap {
-    background: url(../images/home/Polygon.svg) no-repeat 90% 0;
-    /* max-width: 1440px; */
-    margin: 0 auto;
-    overflow: hidden;
-    background-size: 1925px;
+.homeWrapper {
+    background: url(../images/home/topGrayBg.svg) no-repeat right 43rem;
 }
 
 .gridWrapper {
