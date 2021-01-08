@@ -1,0 +1,46 @@
+.featuredCourses {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+
+  &__left {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding: get-size('800');
+
+    @include media-query('md') {
+      flex-grow: 0;
+    }
+
+    > div {
+      margin: 0 auto;
+    }
+
+  }
+
+  &__right {
+    // flex: 1;
+    
+    @include media-query('md') {
+      flex-grow: 1;
+    }
+
+    > div {
+      @include media-query('lg') {
+        max-width: 600px;
+      }
+    }
+
+    > div:first-child {
+      margin-right: auto;
+    }
+    > div:last-child {
+      margin-left: auto;
+    }
+    
+  }
+}
