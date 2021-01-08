@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  
   }
 
   &__left {
@@ -12,22 +11,15 @@
     justify-content: center;
     padding: get-size('800');
 
-    @include media-query('md') {
+    @include media-query('lg') {
       flex-grow: 0;
     }
 
-    > div {
-      margin: 0 auto;
-    }
-
+    > div { margin: 0 auto; }
   }
 
   &__right {
-    // flex: 1;
-    
-    @include media-query('md') {
-      flex-grow: 1;
-    }
+    @include media-query('md') { flex-grow: 1; }
 
     > div {
       @include media-query('lg') {
@@ -41,6 +33,5 @@
     > div:last-child {
       margin-left: auto;
     }
-    
   }
 }
