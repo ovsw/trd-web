@@ -1,15 +1,22 @@
 <a class="[ skip-link ] [ button ]" href="#main-content">Skip to content</a>
 
-<header role="banner" class="site-head [ wrapper flow ]">
-    <div class='menuMobileWrapper pull-right'>
-        <a href="#" class='toggleMenu'><span>Show menu</sapn></a>
+<header role="banner" class="site-head [ wrapper ]">
+
+    {# <div class='menuMobileWrapper [ pull-right ]'>
+        <a href="#" class='toggleMenu'><span class="visually-hidden">Show menu</sapn></a>
         <ul class="menuMobile card">
-            <li><a href="#">Menu item</a></li><li><a href="#">Menu item</a></li><li><a href="#">Menu item</a></li><li><a href="#">Menu item</a></li>
+            {% for navItem in nav %}
+              <li><a href="{{ navItem.url }}">{{ navItem.name }}</a></li>
+            {% endfor %}
         </ul>
-    </div>
-    <a href="#" class="[ button button--light pull-right ]">Inscriere</a>
+    </div> #}
+
+    <a href="#" class="[ button button--light ] [ pull-right ]">Inscriere</a>
+
   <ul class="menu">
-    <li><a href="#">Menu item</a></li><li><a href="#">Menu item</a></li><li><a href="#">Menu item</a></li>
-  </ul>
+    {% for navItem in nav %}
+        <li><a href="{{ navItem.url }}">{{ navItem.name }}</a></li>
+        {% endfor %}
+    </ul>
    <img src="images/home/logo.png" />
 </header>
