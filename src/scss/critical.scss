@@ -59,10 +59,6 @@ h1, h2 {
   }
 }
 
-.pull-right {
-  float: right;
-}
-
 .upperCaseText {
   text-transform: uppercase;
   line-height: 1.6em;
@@ -119,6 +115,7 @@ h1, h2 {
 @import 'utilities/frame';
 @import 'utilities/headline';
 @import 'utilities/panel';
+@import 'utilities/pull-right';
 @import 'utilities/radius';
 @import 'utilities/section';
 @import 'utilities/site-wrap';
