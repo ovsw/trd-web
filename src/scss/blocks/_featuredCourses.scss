@@ -22,9 +22,7 @@
     @include media-query('md') { flex-grow: 1; }
 
     > div {
-      @include media-query('lg') {
         max-width: 600px;
-      }
     }
 
     > div:first-child {
