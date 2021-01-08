@@ -1,5 +1,6 @@
 .testimonialsSection {
     padding-top: 300px !important;
+    padding-bottom: 200px !important;
     background: url(../images/home/testimonials_bg.svg) no-repeat bottom center;
     .gridWrapper {
         grid-template-columns: 1fr 1fr 1fr;
@@ -24,6 +25,8 @@
 }
 .testimonialsBanner {
     .card {
+        margin-top: 100px;
+        margin-bottom: 200px;
         padding: 5%;
         .rightColumn {
             float: right;
