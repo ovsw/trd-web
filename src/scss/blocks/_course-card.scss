@@ -1,0 +1,31 @@
+.course-card {
+  padding: get-size('800')!important;
+
+  h3 {
+    font-size: get-size('600');
+    
+    span {
+      display: block;
+      letter-spacing: 2px;
+      font-size: get-size('330');
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+  }
+
+  ul {
+    margin-left: 0px!important;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    & .upperCaseText span{
+      opacity: 0.7;
+      font-size: get-size('330');2
+    }
+  }
+
+}

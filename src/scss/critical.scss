@@ -16,8 +16,7 @@
 body {
   background: get-color('light');
   color: get-color('dark');
-  line-height: 1.7em;
-  font-size: get-size('500');
+  line-height: 1.5;
 
   @include apply-utility('font', 'base');
   padding-top: 85px;
@@ -99,7 +98,7 @@ h1, h2 {
 
 // Import blocks
 @import 'blocks/button';
-@import 'blocks/card';
+@import 'blocks/course-card';
 @import 'blocks/hero';
 @import 'blocks/site-footer';
 @import 'blocks/site-header';
@@ -109,6 +108,7 @@ h1, h2 {
 // Import utilities
 @import 'utilities/auto-grid';
 @import 'utilities/ball';
+@import 'utilities/card';
 @import 'utilities/column-left.scss';
 @import 'utilities/dot-shadow';
 @import 'utilities/flow';

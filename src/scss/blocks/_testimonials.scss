@@ -24,9 +24,9 @@
     }
 }
 .testimonialsBanner {
+    margin-bottom: 200px;
     .card {
         margin-top: 100px;
-        margin-bottom: 200px;
         padding: 5%;
         .rightColumn {
             float: right;
@@ -37,6 +37,8 @@
         }
         h3 {
             font-weight: 400;
+            font-size: get-size('350');
+            text-transform: capitalize!important;
         }
     }
 }

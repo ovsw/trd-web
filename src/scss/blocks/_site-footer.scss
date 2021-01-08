@@ -1,9 +1,17 @@
-.site-footer {
+.footer {
   background: #161A1B;
+
+  h4 {
+    font-size: get-size('500');
+  }
+
+}
+
+.site-footer {
   padding: 60px 0 !important;
   color: #fff;
-  font-size: .7em;
   line-height: 1.8em;
+  font-size: get-size('350');
   h4 {
     margin-bottom: 1.875rem;
   }
@@ -11,6 +19,7 @@
       text-align: right;
   }
   .footerMenu li {
+    font-size: get-size('400');
     margin-bottom: .9rem;
   }
   .footerDescription {
@@ -22,5 +31,16 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     grid-gap: 2%;
+  }
+
+  &__copyright {
+    background-color: rgba($color: get-color('dark'), $alpha: 0.3);
+    color: get-color('light');
+    padding: get-size('400') 0;
+    font-size: get-size('350');
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
