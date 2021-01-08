@@ -10,25 +10,35 @@
   h3 {
       font-size: 1.4em;
       line-height: 1.7em;
+      text-transform: uppercase;
+      font-size: get-size('600');
+      
+      & span {
+        font-size: get-size('400');
+        display: block;
+      }
+  }
+
+  ul {
+    padding-left: 20px;
   }
 
   .cardFooterLeft {
       float: left;
   }
+  
   &:after {
       content: "";
       display: block;
       clear: both;
   }
 
-  &.whiteCard {
+  &__white {
       background-color:get-color('light');
       color: get-color('dark');
   }
-  &.colorCard {
+  &__primary {
       background: linear-gradient(239.77deg, #00949A 13.66%, #005B61 86.53%);
-      color:rgba(get-color('light-glare'), 0.6);
-
-      
+      color:rgba(get-color('light-glare'), 0.8);
   }
 }
