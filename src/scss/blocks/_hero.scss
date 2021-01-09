@@ -16,6 +16,17 @@
   color: #fff;
   padding-top: 8vh !important;
 
+  &__typeIt {
+      color: get-color('accent-glare');
+      font-size: get-size('600')!important;
+      margin-top: get-size('800');
+      margin-bottom: get-size('800');
+      line-height: 1.2;
+      
+      @include media-query('md') {
+          font-size: get-size('800')!important;
+      }
+  }
   
   .heroContent {
       position: relative;
