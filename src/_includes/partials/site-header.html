@@ -1,22 +1,39 @@
 <a class="[ skip-link ] [ button ]" href="#main-content">Skip to content</a>
 
-<header role="banner" class="site-head [ wrapper ]">
+<header role="banner" class="site-head [ wrapper ]" x-data="{ mainMenuisOpen: false }">
+    
+  <div class="site-head__logo">
+    <img src="images/home/logo.png"/>
+  </div>
 
-    {# <div class='menuMobileWrapper [ pull-right ]'>
-        <a href="#" class='toggleMenu'><span class="visually-hidden">Show menu</sapn></a>
-        <ul class="menuMobile card">
-            {% for navItem in nav %}
-              <li><a href="{{ navItem.url }}">{{ navItem.name }}</a></li>
-            {% endfor %}
-        </ul>
-    </div> #}
 
-    <a href="#" class="[ button button--light ] [ pull-right ]"><span>Inscriere</span></a>
-
-  <ul class="menu">
-    {% for navItem in nav %}
-        <li><a href="{{ navItem.url }}">{{ navItem.name }}</a></li>
-        {% endfor %}
+  <nav 
+    aria-label="Main Menu"
+    x-bind:data-open="mainMenuisOpen" 
+    :aria-expanded="mainMenuisOpen"
+  >
+    <ul class="site-head__menu">
+      {% for navItem in nav %}
+          <li><a href="{{ navItem.url }}"><span>{{ navItem.name }}</span></a></li>
+          {% endfor %}
     </ul>
-   <img src="images/home/logo.png" />
+
+  </nav>
+    <a href="#" class="[ site-head__cta button button--accentDark ] [ pull-right ]"><span>Inscriere</span></a>
+
+  {# MOBILE MENU TOGGLE #}
+    <div class="hamburger-menu__container">
+        <button 
+          aria-controls="nav-list" 
+          aria-label="Main Menu toggle" 
+          :aria-expanded="mainMenuisOpen" 
+          class="hamburger-menu"  
+          @click.prevent="mainMenuisOpen = !mainMenuisOpen" 
+          x-bind:data-open="mainMenuisOpen" 
+          >
+            <div></div>
+        </button>
+    </div>
+  {# END MOBILE MENU TOGGLE #}
+  
 </header>
