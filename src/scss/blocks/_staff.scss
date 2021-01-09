@@ -18,15 +18,19 @@
             top: -55px;
             left: 50%;
             margin-left: -55px;
-            box-shadow: 0px 50px 50px -20px rgba(1, 54, 57, 0.254698);
+            box-shadow: 
+                0px 30px 30px -10px rgba($color: #006268, $alpha: 0.30),
+                0px 0px 30px 0 rgba($color: #006268, $alpha: 0.50)
+            ;
             border-radius: 50%;
         }
     }
 
     &__title {
         text-transform: uppercase;
-        font-size: get-size('330');
-        font-weight: bold;
-        letter-spacing: 1px;
+        font-size: get-size('300');
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #00b0b6;
     }
 }
