@@ -30,6 +30,8 @@
       })(document);
     </script> #}
     <link rel="stylesheet" media="print" href="/fonts/fonts.css?{{ assetHash }}" onload="this.media='all'" />
+    {# animation CSS #}
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     {# Add facility for pages to declare an array of stylesheet paths #}
     {% if pageStylesheets %}
@@ -53,5 +55,10 @@
     </div>
 
     {% include "partials/site-footer.html" %}
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
