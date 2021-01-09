@@ -1,74 +1,34 @@
 .testimonialsSection {
-    padding-top: 300px !important;
-    padding-bottom: 200px !important;
-    background: url(../images/home/testimonials_bg.svg) no-repeat bottom center;
-    .gridWrapper {
+  padding-top: 300px !important;
+  padding-bottom: 200px !important;
+  background: url(../images/home/testimonials_bg.svg) no-repeat bottom center;
+  .grid {
+    
+    @include media-query('lg') {
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         padding-top: 100px;
-        .gridItem  {
-            .avatar {
-                padding: 0;
-                width: 64px;
-                left: 40px;
-                margin-left: 0;
-                top: -32px;
-            }
-             p:not(.color-accent) {
-                 font-style: italic;
-             }
-             .color-accent {
-                 margin-top: 0;
-             }
-        }
-        
+        grid-gap: get-size('400');
     }
+  }
+
+  .gridItem {
+      margin-bottom: get-size('400');
+    .avatar {
+      padding: 0;
+      width: 64px;
+      left: 40px;
+      margin-left: 0;
+      top: -32px;
+    }
+     p:not(.color-accent) {
+       font-style: italic;
+     }
+     .color-accent {
+       margin-top: 0;
+     }
+  }
 }
 .testimonialsBanner {
-    margin-bottom: 200px;
-    .card {
-        margin-top: 100px;
-        padding: 5%;
-        .rightColumn {
-            float: right;
-            padding-top: 30px;
-        }
-        h2 {
-            margin-top: 0;
-        }
-        h3 {
-            font-weight: 400;
-            font-size: get-size('350');
-            text-transform: capitalize!important;
-        }
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .testimonialsSection {
-        
-        .gridWrapper {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-}
-@media screen and (max-width: 650px) {
-    .testimonialsBanner {
-        .card {
-            padding-bottom: 7rem;
-            .rightColumn {
-                position: absolute;
-                bottom: 12%;
-            }
-        }
-
-    }
-}
-@media screen and (max-width: 450px) {
-.testimonialsSection {
-    
-        .gridWrapper {
-            margin-bottom: 100px;
-            grid-template-columns: 1fr;
-        }
-    }
+  margin-bottom: 200px;
 }
