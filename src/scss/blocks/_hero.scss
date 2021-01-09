@@ -57,6 +57,9 @@
       span {
           display: block;
           margin-bottom: get-size('800');
+          &:first-child {
+              opacity: 0.7;
+          }
       }
       padding-bottom: get-size('700');
   }
