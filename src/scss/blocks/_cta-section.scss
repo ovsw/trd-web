@@ -1,0 +1,19 @@
+.cta-section {
+  margin-bottom: 200px;
+
+  &__wrapper {
+    padding: get-size('800');
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  &__left {
+  }
+
+  &__right {
+    text-align: right;
+    flex: 1;
+  }
+}
