@@ -41,7 +41,7 @@
     {% endif %}
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" defer></script>
+    
     <script src="/js/main.js"></script>
   </head>
 
@@ -57,8 +57,46 @@
     {% include "partials/site-footer.html" %}
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script>
       AOS.init();
     </script>
+    <!-- JS -->
+    <script>
+      window.onload = function () {
+        lax.init()
+
+        // Add a driver that we use to control our animations
+        lax.addDriver('scrollY', function () {
+          return window.scrollY
+        })
+
+        // Add animation bindings to elements
+        lax.addElements('.myLax', {
+          scrollY: {
+            translateX: [
+              ["elInY", "elCenterY", "elOutY"],
+              ['screenWidth/2', 0, 0],
+            ]
+          }
+        })
+      }
+    </script>
+    <script>
+      new TypeIt("#typeIt", {
+        // strings: ["Designeri de Interior", "Arhitecti", "Game Designers"],
+        speed: 50,
+        loop: true,
+        lifelike: true,
+        waitUntilVisible: true
+      })
+      .type("Designeri de Interior", {delay: 2000})
+      .delete()
+      .type("Arhitecți", {delay: 2000})
+      .delete()
+      .type("Game Designeri", {delay: 2000})
+      .go();
+  </script>
   </body>
 </html>
