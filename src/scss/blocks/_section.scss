@@ -1,0 +1,51 @@
+.section {
+  padding: get-size('major') 0;
+  position: relative;
+
+  &:after {
+      display: block;
+      content: "";
+      clear: both;
+  }
+
+  &--dark {
+    background: linear-gradient(270deg, #00949A 0%, #005B61 100%);
+  }
+  
+  &--skew-bottom {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      background: url('/images/divider-bottom.svg') no-repeat top left;
+
+      
+    }
+    // &::after polygon {
+    //   fill: red!important;
+    // }
+  }
+  
+  &__skewed {
+    position: relative;
+    padding-bottom: 12.5rem;
+    
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top:0;
+      background: linear-gradient(239.77deg, #00949A 13.66%, #005B61 86.53%);
+      z-index: -10;
+      bottom: -400px;
+      transform-origin: left bottom;
+      transform: skewY(-21deg);
+    }
+  }
+  
+}

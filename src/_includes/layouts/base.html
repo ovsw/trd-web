@@ -47,7 +47,12 @@
 
   <body>
     <div class="site-wrap">
-      {% include "partials/site-header.html" %}
+      <div class="headerWrapper">
+        {% include "partials/site-header.html" %}
+        {% block underHeader %}
+          
+        {% endblock %}
+      </div>
       
       <main tabindex="-1" id="main-content">
         {% block content %}{% endblock %}

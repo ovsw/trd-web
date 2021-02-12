@@ -17,6 +17,7 @@ body {
   background: get-color('light');
   color: get-color('dark');
   line-height: 1.5;
+  font-size: get-size('500');
 
   @include apply-utility('font', 'base');
   padding-top: 85px;
@@ -53,7 +54,7 @@ h1, h2 {
   font-size: get-size('600');
   letter-spacing: -2px;
   @include media-query('md') {
-    font-size: get-size('700');
+    font-size: get-size('900');
     // text-transform: uppercase;
   }
 }
@@ -96,11 +97,42 @@ h1, h2 {
   border-radius: 0.25rem;
 }
 
+// cristina's stuff ...
+body {
+  padding-top: 0 !important;
+}
+.homeWrapper {
+  background: url(../images/home/topGrayBg.svg) no-repeat right 43rem;
+}
+
+.gridWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2%;
+
+  .gridItem {
+      position: relative;
+
+      .avatar {
+          position: absolute;
+          top: -55px;
+          left: 50%;
+          margin-left: -55px;
+          box-shadow: 0px 50px 50px -20px rgba(1, 54, 57, 0.254698);
+          border-radius: 50%;
+      }
+  }
+}
+
 // Import blocks
+@import 'blocks/avatar';
+@import 'blocks/ball';
 @import 'blocks/button';
+@import 'blocks/card';
 @import 'blocks/course-card';
 @import 'blocks/hamburger-menu';
 @import 'blocks/hero';
+@import 'blocks/section';
 @import 'blocks/site-footer';
 @import 'blocks/site-header';
 @import 'blocks/skip-link';
@@ -108,18 +140,12 @@ h1, h2 {
 
 // Import utilities
 @import 'utilities/auto-grid';
-@import 'utilities/avatar';
-@import 'utilities/ball';
-@import 'utilities/card';
 @import 'utilities/column-left.scss';
-@import 'utilities/dot-shadow';
 @import 'utilities/flow';
-@import 'utilities/frame';
 @import 'utilities/headline';
 @import 'utilities/panel';
 @import 'utilities/pull-right';
 @import 'utilities/radius';
-@import 'utilities/section';
 @import 'utilities/site-wrap';
 @import 'utilities/visually-hidden';
 @import 'utilities/wrapper';

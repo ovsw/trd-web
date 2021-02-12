@@ -1,0 +1,16 @@
+.headerWrapper {
+  padding-top: 0.1px;
+  background: url(../images/home/Polygon.svg) no-repeat bottom center;
+  background-size: cover;
+}
+
+.page-header {
+  padding: get-size('major') 0;
+  padding-bottom: 150px;
+  
+  
+  h1 {
+    color: get-color('light');
+    text-align: center;
+  }
+}
