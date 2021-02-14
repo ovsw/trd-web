@@ -4,7 +4,7 @@
     "url": "/cursuri/"
   },{
     "name": "Echipa",
-    "url": "/echipa/"
+    "url": "/echipa-tridia/"
   },{
     "name": "Locatie",
     "url": "/locatie-cursuri/"
@@ -13,7 +13,7 @@
     "url": "/despre-noi/"
   },{
     "name": "Noutati",
-    "url": "/noutati/"
+    "url": "/blog/"
   },{
     "name": "Contact",
     "url": "/contact/"
