@@ -1,6 +1,7 @@
 .headerWrapper {
   padding-top: 0.1px;
-  background: url(../images/home/Polygon.svg) no-repeat bottom center;
+  // background: url(../images/home/Polygon.svg) no-repeat top right;
+  background-color: get-color('primary');
   background-size: cover;
 }
 

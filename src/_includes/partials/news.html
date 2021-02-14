@@ -4,27 +4,22 @@
         <h2 class="headline"><span>Noutăți</span></h2>
 
         <div class="gridWrapper">
+            {% for post in sitePosts %}
             <div class='gridItem card card__white [ flow ]'>
-                <img class='fullsize' src='../images/home/image4.jpg' />
-                <h3>Gigi Duru</h3>
-                <p class='[ color-primary ] upperCaseText'>INSTRUCTOR GAME DESIGN</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-                </p>
+                <img 
+                    class='fullsize'
+                    src="{% croppedUrlFor post.content.mainImage, '500', '400' %}" 
+                    srcset="{% croppedUrlFor post.content.mainImage, '600', '400' %} 500w,
+                    {% croppedUrlFor post.content.mainImage, '900', '600' %}  960w"
+                    sizes="(min-width: 40em) 50vw, 100vw"
+                    alt="{{ alt }}"
+                />
+                <h3>{{post.content.title}}</h3>
+                <p class='[ color-primary ] upperCaseText'>{{post.content.date | dateFilter}}</p>
+
+                <p>{{post.content.excerpt}}</p>
             </div>
-            <div class='gridItem card card__white [ flow ]'>
-                <img class='fullsize' src='../images/home/image1.jpg' />
-                <h3>Gigi Duru</h3>
-                <p class='[ color-primary ] upperCaseText'>INSTRUCTOR GAME DESIGN</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-                </p>
-            </div>
-            <div class='gridItem card card__white [ flow ]'>
-                <img class='fullsize' src='../images/home/image2.jpg' />
-                <h3>Gigi Duru</h3>
-                <p class='[ color-primary ] upperCaseText'>INSTRUCTOR GAME DESIGN</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-                </p>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

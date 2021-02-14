@@ -79,6 +79,10 @@ $heading-height: 100px;
       align-items: center;
       text-decoration: none;
       border-bottom: $mobileMenuItemBorder;
+
+      @include media-query('lg') {
+        border-bottom: none;
+      }
     }
   
     @include media-query('lg') {
