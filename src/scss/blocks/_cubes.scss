@@ -7,4 +7,10 @@
   bottom: -427px;
   right: 0;
   z-index: 100;
+  
+  display: none;
+
+  @include media-query('md') {
+    display: block;
+  }
 }

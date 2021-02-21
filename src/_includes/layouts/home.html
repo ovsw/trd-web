@@ -6,29 +6,39 @@
   <div class='heroBg'></div>
   <div class='innerHomeWrapper'>
     {% include "partials/hero.html" %}
-    {% include "partials/courses.html" %}
-    {% include "partials/staff.html" %}
-    {% include "partials/testimonials.html" %}
-    {% include "partials/cta-section.html" %}
-    {% include "partials/location.html" %}
-    {% include "partials/news.html" %}
+    {# {% include "partials/courses-old.html" %} #}
+    {# {% include "partials/staff.html" %} #}
+    {# {% include "partials/testimonials.html" %} #}
+    {# {% include "sections/cta-section.html" %} #}
+    {# {% include "partials/location.html" %} #}
+    {# {% include "partials/news.html" %} #}
+
+    {% for section in siteHome.content.sections %}
+
+      {% if section._type == 'featCoursesSection' %}
+        {% include "sections/featCourses-section.html" %}
+      {% endif %}
+      {% if section._type == 'ctaSection' %}
+        {% include "sections/cta-section.html" %}
+      {% endif %}
+      {% if section._type == 'reusedSection' %}
+        {% include "sections/reusable-section.html" %}
+      {% endif %}
+      {% if section._type == 'testimonialsSection' %}
+        {% include "sections/testimonials-section.html" %}
+      {% endif %}
+      {% if section._type == 'locationMapSection' %}
+        {% include "partials/location.html" %}
+      {% endif %}
+
+    {% endfor %}
+{% include "partials/news.html" %}
+
   </div>
 </div>
 
-<!--
-  <div class="wrapper">
-    <article>
-      <h1 class="headline" data-color="secondary-light">{{ title }}</h1>
-        {{ content | safe }}  
-    </article>
-  </div>
 
-  <div class="[ hero ] [ flow ]">
-  <h2>header</h2>
-  <p>lorem daskndjoaksnd asjnd lkasnd;a</p>
-  <button>Button</button>
-  </div>
-  -->
+
 {% endblock %}
 
 {% block footerScripts %}

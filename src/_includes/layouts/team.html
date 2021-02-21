@@ -15,12 +15,12 @@
   <section>
     <div class="wrapper flow gap-top-900">
     &nbsp;
-        <div class="staffSection__wrapper [ auto-grid gap-top-700 ]">
+        <div class="[ auto-grid gap-top-700 ]">
         {% for item in siteStaffPage.content.staffList %}
             <div class='gridItem card card__white [ flow ]'>
                 <img src='{% croppedUrlFor item.content.image, 400, 400 %}'  class='avatar' alt="{{item.content.name}}" />
                 <h3>{{item.content.name}}</h3>
-                <p class='staffSection__title [ color-primary ]'>{{item.content.role}}</p>
+                <p class='[ color-primary ]'>{{item.content.role}}</p>
                 <p>{{item.content.shortBio}}</p>
             </div>
         {% endfor %}

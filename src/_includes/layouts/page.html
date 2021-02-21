@@ -4,13 +4,14 @@
 {% from 'components/page-header.html' import pageHeader %}
 {% from 'components/content-sections.html' import contentSections %}
 
-{# <script>console.log({{sitePage.content | dump | safe}})</script> #}
+  {# <script>console.log({{sitePage.content.sections | dump | safe}})</script> #}
 
 {% block underHeader %}
   {{pageHeader(sitePage.content.title)}}
 {% endblock %}
 
 {% block content %}
-  {{contentSections(sitePage.content.sections.sections)}}
+  
+  {{contentSections(sitePage.content.sections)}}
   
 {% endblock %}

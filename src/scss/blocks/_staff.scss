@@ -1,6 +1,5 @@
-.staffSection {
+.cardRowSection {
     text-align: center;
-    padding-bottom: 10rem;
 
     &__wrapper {
         margin-top: get-size('800');
@@ -23,7 +22,7 @@
                 0px 30px 30px -10px rgba($color: #006268, $alpha: 0.30),
                 0px 0px 30px 0 rgba($color: #006268, $alpha: 0.50)
             ;
-            border-radius: 50%;
+            @extend .radius-large;
         }
     }
 

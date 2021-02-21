@@ -1,5 +1,5 @@
 .avatar {
-  border-radius: 50%;
+  @extend .radius-large;
   padding: 10px;
   background: #fff;
   width: 110px;

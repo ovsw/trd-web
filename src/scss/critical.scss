@@ -11,13 +11,29 @@
 // Global styles start
 :root {
   --flow-space: 1.875rem;
+
+  --ratio: 1.333;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+  --s6: calc(var(--s5) * var(--ratio));
+  --s7: calc(var(--s6) * var(--ratio));
+  --s8: calc(var(--s7) * var(--ratio));
 }
 
 body {
   background: get-color('light');
   color: get-color('dark');
   line-height: 1.5;
-  font-size: get-size('500');
+  font-size: get-size('400');
 
   @include apply-utility('font', 'base');
   padding-top: 85px;
@@ -140,6 +156,8 @@ body {
 
 // Import utilities
 @import 'utilities/auto-grid';
+@import 'utilities/cluster-l';
+@import 'utilities/box-shadow';
 @import 'utilities/flow';
 @import 'utilities/headline';
 @import 'utilities/panel';
@@ -147,4 +165,5 @@ body {
 @import 'utilities/radius';
 @import 'utilities/site-wrap';
 @import 'utilities/visually-hidden';
+@import 'utilities/with-sidebar-l';
 @import 'utilities/wrapper';

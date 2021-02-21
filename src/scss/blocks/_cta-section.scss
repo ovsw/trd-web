@@ -1,8 +1,6 @@
 .cta-section {
-  margin-bottom: 200px;
-
+  padding: get-size('xl') 0;
   &__wrapper {
-    padding: get-size('800');
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

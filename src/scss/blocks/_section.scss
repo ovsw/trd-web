@@ -1,25 +1,29 @@
 .section {
-  padding: get-size('major') 0;
+  padding: get-size('2xl') 0;
   position: relative;
-
+  
   &:after {
-      display: block;
-      content: "";
-      clear: both;
+    display: block;
+    content: "";
+    clear: both;
   }
-
+  
   &--dark {
+    padding: get-size('3xl') 0;
     background: linear-gradient(270deg, #00949A 0%, #005B61 100%);
   }
   
   &--skew-bottom-dark {
+    padding-bottom: 250px;
     &::after {
       content: "";
       position: absolute;
       bottom: 0;
       width: 100%;
       height: 100px;
-      background: url('/images/skew-divider-bottom-dark.svg') no-repeat top left;
+      // background: url('/images/skew-divider-bottom-dark.svg') no-repeat top left;
+      background-color: linear-gradient(270deg, #00949A 0%, #005B61 100%);
+      background: url('/images/skew-divider-bottom-light.svg') no-repeat top left;
     }
   }
 
@@ -28,6 +32,30 @@
       content: "";
       position: absolute;
       bottom: 0;
+      width: 100%;
+      height: 100px;
+      background: url('/images/skew-divider-bottom-light.svg') no-repeat top left;
+    }
+  }
+
+  &--skew-top-dark {
+    padding-top: 250px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: get-color('light') url('/images/skew-divider-bottom-dark.svg') no-repeat top left;
+    }
+  }
+
+  &--skew-top-light {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
       width: 100%;
       height: 100px;
       background: url('/images/skew-divider-bottom-light.svg') no-repeat top left;

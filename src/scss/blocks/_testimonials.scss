@@ -1,13 +1,10 @@
 .testimonialsSection {
-  padding-top: 300px !important;
-  padding-bottom: 200px !important;
-  background: url(../images/home/testimonials_bg.svg) no-repeat bottom center;
+  background: url(../images/home/testimonials_bg.svg) no-repeat top center;
   .grid {
     
     @include media-query('lg') {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        padding-top: 100px;
         grid-gap: get-size('400');
     }
   }
